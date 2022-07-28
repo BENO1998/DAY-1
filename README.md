@@ -6,6 +6,7 @@ HTTP1:
 2.Can define 16 status codes; the error prompt is not specific enough..
 3.Uses basic authentication scheme which is unsafe since username and passwords are transmitted in clear text or base64 encoded.
 4.HTTP1 provides faster delivery of web pages and reduces web traffic as compared to HTTP/1.0. However, TCP starts slowly and with domain sharding (resources can be downloaded simultaneously by using multiple domains), connection reuse and pipelining, there is an increased risk of network congestion.
+
 HTTP2:
 1.Uses multiplexing, where over a single TCP connection resources to be delivered are interleaved and arrive at the client almost at the same time. It is done using streams which can be prioritized, can have dependencies and individual flow control. It also provides a feature called server push that allows the server to send data that the client will need but has not yet requested.
 2.Underlying semantics of HTTP such as headers, status codes remains the same.
